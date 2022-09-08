@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: karla;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 1.25rem;
+}
+
+header h1 {
+    font-size: 1.25rem;
+}
+
+.header--img {
+    height: 100%;
+    margin-right: 6px;
+    background-color: transparent;
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
