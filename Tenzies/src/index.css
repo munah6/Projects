@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 30px;
+}
+
+main {
+  background-color: #F5F5F5;
+  border-radius: 0.5rem;
+  height: 90vh;
+  
+}
+
+/*
+  Note to self: 
+
+  From W3:
+    The viewport-percentage lengths are relative to the size of the initial containing block. 
+    When the height or width of the initial containing block is changed, they are scaled accordingly.
+  
+  Units:
+    vh (viewport height), 
+    vw (viewport width), 
+    vmin (viewport minimum length) and 
+    vmax (viewport maximum length)
+*/
