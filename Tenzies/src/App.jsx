@@ -1,5 +1,6 @@
 import React from "react"
 import Dice from "./components/Dice"
+import {nanoid} from "nanoid"
 
 export default function App() {
 
@@ -10,7 +11,8 @@ export default function App() {
         // Math.ceil will start from 1 instead of 0 like Math.floor - since dice dont have 0
         randomTen.push({
           value: Math.ceil(Math.random()*6),
-          isHeld: false
+          isHeld: false,
+          id: nanoid()
         });
     }
 
@@ -21,7 +23,7 @@ export default function App() {
     
     const diceNumberElements = diceNumbers.map((num) => {
         return(
-            <Dice value={num.value}/>
+            <Dice key={num.id} value={num.value}/>
         )
     })
 
