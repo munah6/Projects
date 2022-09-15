@@ -8,7 +8,10 @@ export default function App() {
     
     for(let i = 0; i < 10; i++){
         // Math.ceil will start from 1 instead of 0 like Math.floor - since dice dont have 0
-        randomTen.push(Math.ceil(Math.random()*6));
+        randomTen.push({
+          value: Math.ceil(Math.random()*6),
+          isHeld: false
+        });
     }
 
     return randomTen;
@@ -18,7 +21,7 @@ export default function App() {
     
     const diceNumberElements = diceNumbers.map((num) => {
         return(
-            <Dice value={num}/>
+            <Dice value={num.value}/>
         )
     })
 
