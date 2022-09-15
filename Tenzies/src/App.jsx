@@ -22,11 +22,17 @@ export default function App() {
         )
     })
 
+    function rollDice() {
+      setDiceNumbers(allNewDice());
+    }
+
   return (
       <main >
           <div className="dice-container">
               {diceNumberElements}
           </div>
+
+          <button className="button-roll" onClick={rollDice}> Roll </button>
       </main>
   )
 }
